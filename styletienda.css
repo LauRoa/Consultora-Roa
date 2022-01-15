@@ -1,0 +1,86 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 5fr ;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+/*TIENDA*/
+.section__contenido {
+    grid-area: section;
+}
+.elementos__carrito{
+    font-size: 1.1rem;
+    color:rgb(66, 63, 55);
+    padding: 0.5rem;
+    margin: 5px;
+    border: solid;
+    border-color: rgb(66, 63, 55);
+    border-radius: 20px;
+}
+.elementos__carrito label{
+    display: block;
+}
+.elementos__carrito select{
+    color: aliceblue;
+    background-color:rgb(55, 189, 55) ;
+    padding: 0.4rem;
+    margin: 2px;
+    border: solid;
+    border-color: gray;
+    border-radius: 20px;
+}
+.botones__carrito input{
+    color: aliceblue;
+    background-color:rgb(55, 189, 55) ;
+    padding: 0.4rem;
+    margin: 2px;
+    border: solid;
+    border-color: gray;
+    border-radius: 20px;
+}
+
+@media (min-width:320px){
+    .section__contenido {
+        display: grid;
+        grid-template-areas: "titulo titulo"
+        "opds ada"
+        "secretaria colegio"
+        "apra otras";
+    }
+    .opds{
+        grid-area: opds;
+    }
+    .ada{
+        grid-area: ada;
+    }
+    .secretaria{
+        grid-area: secretaria;
+    }
+    .colegio{
+        grid-area: colegio;
+    }
+    .apra{
+        grid-area:apra
+    }
+    .otras__provincias{
+        grid-area: otras;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+}
+.section__contenido{
+    background-color: rgb(129, 236, 138);
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}

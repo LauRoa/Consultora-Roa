@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/descarga.png" alt = "logo CDKOT">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletienda.css">
+    <title>Tienda</title>
+</head>
+<body>
+    <header class = "header">
+        <div class="header__logo">
+             <img src="./img/descarga.png" alt="Logo de la firma">
+        </div>
+        <nav class = "header__navbar">
+            <ul class = "header__navbar--flex">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "sobrenosotros.html">Nosotros</a></li>
+                <li><a href = "tienda.html">Tienda</a></li>
+                <li><a href = "clientes.html">Clientes</a></li>
+                <li><a href = "contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="section__contenido">
+            <h4 class="titulo">SOLICITE AQUÍ LA COTIZACIÓN DEL TRABAJO QUE DESEA QUE REALICEMOS.</h4>
+            <div class="opds">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en OPDS:</legend>
+                        <select name="trabajoOpds" id="trabajoOpds">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="AA">Auditoria Ambiental - AA</option>
+                            <option value="EIA"> Estudio de Impacto Ambiental - EIA</option> 
+                            <option value="RREE">Residuos Especiales - RREE </option>
+                            <option value="LEGA">Efluentes Gaseosos - LEGA </option>
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="ada">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en ADA:</legend>
+                        <select name="trabajoAda" id="trabajoAda">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="PH">Prefactibilidad hidrica</option>
+                            <option value="PE"> Permiso de explotaicón del recurso hidrico subterráneo</option> 
+                            <option value="PV">Permiso de vuelco de efluentes liquidos </option>
+                            <option value="AH">Aptitud hidraulica </option>
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="secretaria">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en Secretaria de Ambiente Nacion:</legend>
+                        <select name="trabajoOpds" id="trabajoOpds">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="AA">Inscripción generador de resid. peligrosos</option>
+                            <option value="EIA"> DDJJ Residuos Peligrosos</option> 
+                            <option value="RREE">Alta SIMEL </option>
+                            <option value="LEGA">Otra consulta </option>
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="colegio">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en el Colegio de Ingenieros:</legend>
+                        <select name="trabajoColegio" id="trabajoColegio">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="CC">Contratos Civiles</option>
+                            <option value="CM">Contrato Medio Ambiente</option> 
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="apra">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en APrA:</legend>
+                        <select name="trabajoColegio" id="trabajoColegio">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="RAC">Inscripcion y renovación en el RAC</option>
+                            <option value="REF">Inscripcion y solicitud de REF</option> 
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="otras__provincias">
+                <form action="">
+                    <fieldset class= "elementos__carrito">
+                        <!-- Menu desplegable-->
+                        <label for="asesoramiento">Trabajos: </label>
+                        <legend>Seleccione el trabajo que desea realizar en otras provincias:</legend>
+                        <select name="trabajoColegio" id="trabajoColegio">
+                            <option value="">Seleccioná el trabajo que desea realizar</option>
+                            <option value="RAC">Auditoria ambiental</option>
+                            <option value="REF">Residuos peligrosos</option> 
+                            <option value="REF">Efluentes gaseosos</option> 
+                        </select>
+                        <label for="email">Email: </label>
+                        <input type="temail" name="email" id="email" placeholder="Ingrese correo de recepción de cotización" required>                      
+                        <label for="consulta">Información Adicional: </label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                        <div class ="botones__carrito">
+                            <input type="submit" value="Recibir cotización">
+                            <input type="reset" value="Vaciar carrito">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+    </section>
+    <footer class = "footer">
+        <ul class="footer__menu">
+            <p> Seguinos en nuestras <b>Redes Sociales</b></p>
+            <a href="https://instagram.com/cdkot" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"> <img src="./icon/facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./icon/youtube.png" alt="youtube"></a>
+        </ul>
+        <div class="direccion">
+            Tolosa - La Plata- Pcia. de Buenos Aires <br>
+            Calle 11 N 560 e/ 526 y 527, Piso 2
+        </div>
+        <div class="footer__credito">
+            Copyright - Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+</html>

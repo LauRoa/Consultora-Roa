@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/descarga.png" alt = "logo CDKOT">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecontacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class = "header">
+        <div class="header__logo">
+             <img src="./img/descarga.png" alt="Logo de la firma">
+        </div>
+        <nav class = "header__navbar">
+            <ul class = "header__navbar--flex">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "sobrenosotros.html">Nosotros</a></li>
+                <li><a href = "tienda.html">Tienda</a></li>
+                <li><a href = "clientes.html">Clientes</a></li>
+                <li><a href = "contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class = "contenedor__contacto">
+        <h4 >En caso de consultas,por favor complete el siguiente formulario. </h4>
+        <section class="section__contacto">
+            <form action="">
+                <fieldset class= "elementos__formulario">
+                    <!-- Menu desplegable-->
+                    <label for="asesoramiento">Tipo de Asesoramiento: </label>
+                    <legend>Formulario del contacto</legend>
+                    <select name="asesoramiento" id="asesoramiento">
+                        <option value="">Seleccioná el tema de la consulta</option>
+                        <option value="L">Asesoramiento Legal </option>
+                        <option value="T"> Asesoramiento tecnico </option> 
+                        <option value="O">Otro </option>
+                    </select>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                    <label for="email">Email: </label>
+                    <input type="temail" name="email" id="email" placeholder="Ingrese su correo" required>
+                    <label for="consulta">Consulta: </label>
+                    <textarea name="consulta" id="consulta" cols="20" rows="5" placeholder=" Ingrese su consulta o comentario"></textarea>
+                    <div class ="botones__formulario">
+                        <input type="submit" value="Enviar el formulario">
+                        <input type="reset" value="Limpiar formulario">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer class = "footer">
+        <ul class="footer__menu">
+            <p> Seguinos en nuestras <b>Redes Sociales</b></p>
+            <a href="https://instagram.com/cdkot" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"> <img src="./icon/facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./icon/youtube.png" alt="youtube"></a>
+        </ul>
+        <div class="direccion">
+            Tolosa - La Plata- Pcia. de Buenos Aires <br>
+            Calle 11 N 560 e/ 526 y 527, Piso 2
+        </div>
+        <div class="footer__credito">
+            Copyright - Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+</html>

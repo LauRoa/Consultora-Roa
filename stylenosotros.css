@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 1fr ;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+
+/* ------ NOSOTROS ------ */
+.section__nosotros{
+    grid-area: section;
+    display: grid;
+    background-color: rgb(129, 236, 138);
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    align-items: center;
+    grid-template-areas: "quienes__somos"
+    "p" "vision" "contenedor__video";
+}
+.quienes_somos{
+    grid-area: quienes__somos;
+}
+.section__nosotros p{
+    grid-area: p;
+    margin-top: 2rem;
+}
+.vision{ 
+    grid-area:vision;
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.contenedor__video{
+    grid-area: contenedor__video;
+    text-align: center;
+}
+
+@media (min-width:460px){
+    .section__nosotros{
+        grid-template-areas: "quienes__somos quienes__somos"
+        "p p"
+        "vision contenedor__video"
+        "vision contenedor__video";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section__nosotros p{
+        padding-right: 4rem;
+    }
+    .vision{
+        margin-right: 2rem;
+    }
+    .section__nosotros iframe{
+        width:392px;
+        height:221px;
+    }
+}
+@media (min-width:720px){
+    .section__nosotros{
+        grid-template-areas: "quienes__somos quienes__somos"
+        "p p"
+        "vision contenedor__video"
+        "vision contenedor__video";
+    }
+    .section__nosotros iframe{
+        width:560px;
+        height:315px;
+    }
+    .section__nosotros p{
+        margin-bottom: 2rem;
+    }
+}
