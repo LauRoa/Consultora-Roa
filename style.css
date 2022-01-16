@@ -64,7 +64,8 @@ h1,h2,h3,h4 {
 footer{
     grid-area: footer;
     display: flex;
-    background-color: black;
+    background: rgb(69,96,79);
+    background: linear-gradient(90deg, rgba(69,96,79,0.5163107479319853) 15%, rgba(42,45,42,0.9224732129179797) 52%);
     color: white;
     background-size: cover;
     background-position: center;

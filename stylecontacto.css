@@ -24,6 +24,7 @@ footer{
     background-repeat: no-repeat;
     background-position: top;
 }
+
 .section__contacto{
     grid-area: contacto;
     padding: 1rem;
