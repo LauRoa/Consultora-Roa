@@ -1,22 +1,6 @@
-body{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "section"
-    "footer";
-    grid-template-columns: 5fr ;
-}
-header{
-    grid-area: header;
-}
-footer{
-    grid-area: footer;
-}
+
 /* -----CONTACTO ---- */
 .contenedor__contacto{
-    grid-area: section;
-    grid-template-areas: "h4 h4"
-    "h4 h4" "contacto ingenieros" "contacto ingenieros";
     align-items: center;
     justify-items: stretch;
     background-image: url(../img/Ingeniero-ambiental.jpg);
@@ -26,24 +10,23 @@ footer{
 }
 
 .section__contacto{
-    grid-area: contacto;
     padding: 1rem;
-    font-size: 1.3rem;
     line-height: 1.8rem;
-    text-align: justify;
+    text-align: center;
 }
 .contenedor__contacto h4{
-    grid-area:h4;
     padding: 1rem;
     font-size: 1rem;
     text-align: justify;
+}
+h4{
+    color: aliceblue;
 }
 
 .elementos__formulario{
     font-size: 1.1rem;
     color:rgb(66, 63, 55);
     padding: 0.5rem;
-    margin: 5px;
     border: solid;
     border-color: rgb(66, 63, 55);
     border-radius: 20px;
@@ -72,27 +55,18 @@ footer{
     border-color: gray;
     border-radius: 20px;
 }
-@media (min-width:320px){
-    .contenedor__contacto{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 0.2fr 2fr;
-        grid-template-areas:"h4 h4" "contacto ingenieros" "contacto ingenieros" ;
-        align-items: center;
-        justify-items: stretch;
-    }
-    .ingenieros__trabajando{
-        background-color:rgb(129, 236, 138);
-        grid-area: ingenieros;
-    }
-    .ingenieros__trabajando img{
-        max-width: 90%;
-        opacity: 1;
-    }
-    .ingenieros__trabajando div{
-        margin-top: 7rem;
+#asesoramiento{
+    max-width: 100%;
+}
+
+@media (min-width:720px){
+    .section__contacto{
+        text-align: justify;
     }
     .elementos__formulario{
         width: 25rem;
+    }
+    h4{
+        color: rgb(66, 63, 55);
     }
 }
