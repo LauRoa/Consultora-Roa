@@ -5,14 +5,6 @@ footer p{
     text-align: center;
 }
 /* ------ NOSOTROS ------ */
-.section__nosotros{
-    background-color: rgb(129, 236, 138);
-    padding: 1rem;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    text-align: justify;
-    align-items: center;
-}
 
 .vision{ 
     font-style: italic;
@@ -20,33 +12,21 @@ footer p{
     margin-top: 2rem;
 }
 .contenedor__video{
-    grid-area: contenedor__video;
     text-align: center;
     margin-bottom: 1rem;
 }
-
-@media (min-width:460px){
-       .section__nosotros p{
-        padding-right: 4rem;
-    }
-    .vision{
-        margin-right: 2rem;
-    }
-    .section__nosotros iframe{
-        width:392px;
-        height:221px;
-    }
-}
-@media (min-width:720px){
-    .section__nosotros iframe{
-        width:560px;
-        height:315px;
-        margin-bottom: 2rem;
-    }
-    .section__nosotros p{
-        margin-bottom: 2rem;
-    }
+.dimension__video{
+  max-width: 100%;
 }
 .quienes__somos{
     margin-top: 1rem;
 }
+
+@media (min-width:720px){
+    .dimension__video {
+        width:560px;
+        height:315px;
+        margin-bottom: 2rem;
+    }
+}
+
