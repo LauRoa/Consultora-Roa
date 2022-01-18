@@ -21,19 +21,6 @@ h1,h2,h3,h4 {
     padding-left: 0rem ;
 }
 /*-------------HEADER------------*/
-
-.header{
-    display: flex;
-    background-image: url("../img/encabezado1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: auto;
-    align-content: space-between;
-    justify-content: space-between; 
-}
-
 .header__logo{
     width: 10rem;
     height: auto;

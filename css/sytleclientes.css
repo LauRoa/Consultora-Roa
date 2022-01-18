@@ -7,13 +7,19 @@
     padding-top: 15px;
     margin-bottom: 10px;
 }
+.clientes{
+    padding-left: 2rem;
+}
 .section__contenido{
     background-color: rgb(129, 236, 138);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1rem; 
     padding-right: 2rem;
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
+}
+.nuestros__clientes{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
