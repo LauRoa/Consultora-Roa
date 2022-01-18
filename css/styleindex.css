@@ -1,22 +1,7 @@
-body{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "section"
-    "footer";
-    grid-template-columns: 5fr ;
-}
-header{
-    grid-area: header;
-}
 
-footer{
-    grid-area: footer;
-}
 /*----------CONTENIDO ----------*/
 
 .section__organismos{
-    grid-area: section;
     background-color: rgb(129, 236, 138);
     padding: 1rem;
     font-size: 1.3rem;
@@ -25,8 +10,8 @@ footer{
 }
 .section__organismos img{
     max-height: 7rem;
-    padding: 2.6rem;
     margin-top: 3rem;
+    padding: 0.3rem;
 }
 .img__organismos{
     display: flex;
@@ -36,50 +21,30 @@ footer{
 aside{
     display: none;
 }
-.contenedorFlex{
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
+.lugar__detrabajo{
+    display: none;
+}
+.navbar-brand__modificado{
+    color: aliceblue;
 }
 
-/* ----- ASIDE-----*/
-@media (min-width:320px){
-    .contenedorFlex{
-        grid-template-areas: 
-        "section__organismos lugar__detrabajo"
-        "section__organismos lugar__detrabajo";
-        align-items: stretch;
-        justify-items: center;
-        background-color: rgb(129, 236, 138);
-    }
-    .section__organismos{
-        grid-area: section__organismos;
-        }
+@media (min-width:720px){
+    
     .lugar__detrabajo {
-        display: grid;
-        grid-area: lugar__detrabajo;
-        grid-template-areas: "pba"
-        "caba";
-        align-items: inherit;
+        display: inline-block;
     }
     #pba{
-        grid-area: pba;
         justify-content: center;
-        max-height: 50%;
-        margin-top:2rem;
-        margin-left: 3rem;
-        margin-bottom: 5rem;
-        margin-right: 5rem;
+        margin-top:5rem;
+        max-width: 100%;
         }
     #caba{
-        grid-area: caba;
-        margin-top: 2rem;
-        margin-left: 3rem;
-        margin-bottom: 5rem;
-        max-width:60%;
-        margin-right: 2rem;
+        margin-top: 5rem;
+        max-width: 100%;
     }
     .img__organismos{
         flex-direction: row;
         justify-content:space-evenly;
+        
     }   
 }

@@ -1,36 +1,11 @@
-body{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "section"
-    "footer";
-    grid-template-columns: 1fr ;
-}
-header{
-    grid-area: header;
-}
-footer{
-    grid-area: footer;
-}
 p{
     text-align: justify;
 }
 footer p{
     text-align: center;
 }
-.header__navbar{
-    background-image: url("../img/encabezado.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: auto;
-    align-content: space-between;
-    justify-content: space-between; 
-}
 /* ------ NOSOTROS ------ */
 .section__nosotros{
-    grid-area: section;
     background-color: rgb(129, 236, 138);
     padding: 1rem;
     font-size: 1.3rem;

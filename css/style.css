@@ -17,12 +17,14 @@ h1,h2,h3,h4 {
 #ul__footer{
     padding-right: 2rem ;
 }
+.ul__desplazados{
+    padding-left: 0rem ;
+}
 /*-------------HEADER------------*/
 
 .header{
-    grid-area: header;
     display: flex;
-    background-image: url("../img/encabezado.png");
+    background-image: url("../img/encabezado1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,8 +40,18 @@ h1,h2,h3,h4 {
     margin-top: 0.3rem;
 }
 .header__logo img{
-    width: 100%;
+    width: 80%;
     padding: 1rem;
+}
+.header__navbar{
+    background-image: url("../img/encabezado.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    align-content: space-between;
+    justify-content: space-between; 
 }
 .header__navbar--flex{
     display: flex;
@@ -68,7 +80,6 @@ h1,h2,h3,h4 {
 
 /*----------FOOTER----------*/
 footer{
-    grid-area: footer;
     display: flex;
     background: rgb(69,96,79);
     background: linear-gradient(90deg, rgba(69,96,79,0.5163107479319853) 15%, rgba(42,45,42,0.9224732129179797) 52%);

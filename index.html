@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/descarga.png" alt = "logo CDKOT">
+    <link rel="shortcut icon" href="./img/logo.png" alt = "logo CDKOT">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleindex.css">
     <link rel="stylesheet" href="./css-bst/bootstrap.min.css">
@@ -12,80 +12,107 @@
 </head>
 
 <body>
-    <header class = "header">
-        <div class="header__logo">
-             <img src="./img/descarga.png" alt="Logo de la firma">
-        </div>
-        <nav class = "header__navbar">
-            <ul class = "header__navbar--flex">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "sobrenosotros.html">Nosotros</a></li>
-                <li><a href = "tienda.html">Tienda</a></li>
-                <li><a href = "clientes.html">Clientes</a></li>
-                <li><a href = "contacto.html">Contacto</a></li>
+    <nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light" style="background-image:url(./img/encabezado1.png)">
+        <div class="container-fluid">
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="Logo de la firma">
+           </div>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sobrenosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class = "contenedorFlex">
-            <section class = "section__organismos">
-                <h4>Trabajos y presentaciones en Provincia de Buenos Aires</h4>
-                <p>Asesoramiento integral en:
-                    <ul>
-                        <li>Radicación y funcionamiento industrial: Clasificación de Nivel de Complejidad Ambiental <i>(CNCA)</i>,solicitud, renovación y/o reclasificación.
-                        Estudio de Impacto Ambiental (EIA) de solicitud del Certificado de Aptitud Ambiental <i>(CAA)</i> o Certificado de Aptitud Ambiental del Proyecto <i>(CAAP)</i>. </li>
-                        <li>Efluentes líquidos industriales y cloacales.</li>
-                        <li>Efluentes gaseosos: Solicitud, Actualización, Renovación, Eximición de Licencia de Emisiones gaseosas a la atmósfera <i>(LEGA).</i></li>
-                        <li>Residuos especiales y peligrosos e industriales.</li>
-                        <li>Recursos hidrícos subterráneos y superficiales.</li>
-                        <li>Aparatos sometidos a presión.</li>
-                        <li>Estudio de sitios contaminados y remediaciones Due Diligence.</li>
-                    </ul>
-                </p>
-                <div class="img__organismos">
-                    <a href="https://www.opds.gba.gov.ar/"> <img src="./img/opds.png" alt="logo OPDS" class = "img1"></a>
-                    <a href="http://www.ada.gba.gov.ar/"><img src="./img/ada.png" alt="logo ADA" class = "img2"> </a>
-                    <a href="http://www.colegioingenieros.org.ar/"><img src="./img/colegio.png" alt="logo Colegio de Ingenieros PBA" class = "img3"></a> 
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color: rgb(129, 236, 138);;">
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                <section class = "section__organismos">
+                    <h4>Trabajos y presentaciones en Provincia de Buenos Aires</h4>
+                    <p>Asesoramiento integral en:
+                        <ul  class ="ul__desplazados">
+                            <li>Radicación y funcionamiento industrial: Clasificación de Nivel de Complejidad Ambiental <i>(CNCA)</i>,solicitud, renovación y/o reclasificación.
+                            Estudio de Impacto Ambiental (EIA) de solicitud del Certificado de Aptitud Ambiental <i>(CAA)</i> o Certificado de Aptitud Ambiental del Proyecto <i>(CAAP)</i>. </li>
+                            <li>Efluentes líquidos industriales y cloacales.</li>
+                            <li>Efluentes gaseosos: Solicitud, Actualización, Renovación, Eximición de Licencia de Emisiones gaseosas a la atmósfera <i>(LEGA).</i></li>
+                            <li>Residuos especiales y peligrosos e industriales.</li>
+                            <li>Recursos hidrícos subterráneos y superficiales.</li>
+                            <li>Aparatos sometidos a presión.</li>
+                            <li>Estudio de sitios contaminados y remediaciones Due Diligence.</li>
+                        </ul>
+                    </p>
+                    <div class="img__organismos">
+                        <a href="https://www.opds.gba.gov.ar/"> <img src="./img/opds1.png" alt="logo OPDS" class = "img1"></a>
+                        <a href="http://www.ada.gba.gov.ar/"><img src="./img/ada1.png" alt="logo ADA" class = "img2"> </a>
+                        <a href="http://www.colegioingenieros.org.ar/"><img src="./img/colegio1.png" alt="logo Colegio de Ingenieros PBA" class = "img3"></a> 
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <section class="lugar__detrabajo">
+                    <img id="pba" src="./img/provincia1.png" alt="PBA">    
+                </section> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                    <section class = "section__organismos">
+                        <h4>Trabajos y presentaciones en Ciudad Autónoma de Buenos Aires</h4>
+                        <p>Asesoramiento integral en:
+                            <ul class="ul__desplazados">
+                                <li>Radicación y funcionamiento industrial:  Estudio de Impacto Ambiental (EIA) de solicitud del Certificado de Aptitud Ambiental <i>(CAA)</i> o Disposición de Impacto Ambiental<i>(DIA)</i>.</li>
+                                <li>Efluentes líquidos industriales y cloacales.</li>
+                                <li>Efluentes gaseosos: Solicitud, Actualización, Renovación, Eximición del Registro de generadores de contaminantes atmosféricos provenientes de fuentes fijas<i>(REF)</i>.</li>
+                                <li>Residuos especiales y peligrosos e industriales.</li>
+                                <li>Recursos hidrícos subterráneos y superficiales.</li>
+                                <li>Aparatos sometidos a presión.</li>
+                                <li>Estudio de sitios contaminados y remediaciones Due Diligence.</li>
+                            </ul>
+                        </p>
+                        <div class="img__organismos">
+                        <a href="https://www.acumar.gob.ar/"><img src="./img/acumar1.png" alt="logo ACUMAR" class = "img4"></a> 
+                        <a href="https://www.buenosaires.gob.ar/agenciaambiental"><img src="./img/apra1.jpg" alt="logo APrA" class = "img5">  </a> 
+                        </div>
+                    </section>
                 </div>
-
-                <h4>Trabajos y presentaciones en Ciudad Autónoma de Buenos Aires</h4>
-                <p>Asesoramiento integral en:
-                    <ul>
-                        <li>Radicación y funcionamiento industrial:  Estudio de Impacto Ambiental (EIA) de solicitud del Certificado de Aptitud Ambiental <i>(CAA)</i> o Disposición de Impacto Ambiental<i>(DIA)</i>.</li>
-                        <li>Efluentes líquidos industriales y cloacales.</li>
-                        <li>Efluentes gaseosos: Solicitud, Actualización, Renovación, Eximición del Registro de generadores de contaminantes atmosféricos provenientes de fuentes fijas<i>(REF)</i>.</li>
-                        <li>Residuos especiales y peligrosos e industriales.</li>
-                        <li>Recursos hidrícos subterráneos y superficiales.</li>
-                        <li>Aparatos sometidos a presión.</li>
-                        <li>Estudio de sitios contaminados y remediaciones Due Diligence.</li>
-                    </ul>
-                </p>
-                <div class="img__organismos">
-                <a href="https://www.acumar.gob.ar/"><img src="./img/acumar.png" alt="logo ACUMAR" class = "img4"></a> 
-                <a href="https://www.buenosaires.gob.ar/agenciaambiental"><img src="./img/apra.jpg" alt="logo APrA" class = "img5">  </a> 
+                <div class="col-sm-12 col-md-3">
+                    <section class="lugar__detrabajo">
+                        <img id="caba" src="./img/ciudad.jpg" alt="CABA">    
+                    </section> 
                 </div>
-            </section>
-                <aside class="lugar__detrabajo">
-                        <img id="pba" src="./img/provincia1.png" alt="PBA">
-                        <img id="caba" src="/img/ciudad.jpg" alt="CABA">
-                </aside>
+            </div>         
         </div>
     </div>
-        <footer class = "footer">
-            <ul class="footer__menu">
-                <p> Seguinos en nuestras <b>Redes Sociales</b></p>
-                <a href="https://instagram.com/cdkot" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
-                <a href="https://facebook.com" target="_blank"> <img src="./icon/facebook.png" alt="Facebook"></a>
-                <a href="https://youtube.com" target="_blank"><img src="./icon/youtube.png" alt="youtube"></a>
-            </ul>
-            <div class="direccion">
-                Tolosa - La Plata- Pcia. de Buenos Aires <br>
-                Calle 11 N 560 e/ 526 y 527, Piso 2
-            </div>
-            <div class="footer__credito">
-                Copyright - Todos los derechos reservados
-            </div>
-        </footer>
+    <footer class = "footer">
+        <ul class="footer__menu" id="ul__footer">
+            <p> Seguinos en nuestras <b>Redes Sociales</b></p>
+            <a href="https://instagram.com/cdkot" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"> <img src="./icon/facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./icon/youtube.png" alt="youtube"></a>
+        </ul>
+        <div class="direccion">
+            Tolosa - La Plata- Pcia. de Buenos Aires <br>
+            Calle 11 N 560 e/ 526 y 527, Piso 2
+        </div>
+        <div class="footer__credito">
+            Copyright - Todos los derechos reservados
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="js-bst/bootstrap.min.js"></script>
 </body>
