@@ -1,17 +1,4 @@
-body{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "section"
-    "footer";
-    grid-template-columns: 5fr ;
-}
-header{
-    grid-area: header;
-}
-footer{
-    grid-area: footer;
-}
+
 /* CLIENTES */
 .cliente {
     display: inline-block;
@@ -21,9 +8,11 @@ footer{
     margin-bottom: 10px;
 }
 .section__contenido{
-    grid-area: section;
     background-color: rgb(129, 236, 138);
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+    padding-right: 2rem;
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;

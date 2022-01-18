@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/descarga.png" alt = "logo CDKOT">
+    <link rel="shortcut icon" href="./img/logo.png" alt = "logo CDKOT">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sytleclientes.css">
+    <link rel="stylesheet" href="./css-bst/bootstrap.min.css">
     <title>Clientes</title>
 </head>
 <body>
-    <header class = "header">
-        <div class="header__logo">
-             <img src="./img/descarga.png" alt="Logo de la firma">
-        </div>
-        <nav class = "header__navbar">
-            <ul class = "header__navbar--flex">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "sobrenosotros.html">Nosotros</a></li>
-                <li><a href = "tienda.html">Tienda</a></li>
-                <li><a href = "clientes.html">Clientes</a></li>
-                <li><a href = "contacto.html">Contacto</a></li>
+    <nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light" style="background-image:url(./img/encabezado1.png)">
+        <div class="container-fluid">
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="Logo de la firma">
+           </div>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: aliceblue;background-color: aliceblue;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content:flex-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link__modificado" href="index.html">Home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link__modificado" aria-current="page" href="sobrenosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link__modificado" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link__modificado" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link__modificado" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+    </nav>
     <section class = "section__contenido">
         <h4>
             <p>Algunos de nuestros clientes</p>
@@ -96,7 +113,7 @@
     </section>    
 
     <footer class = "footer">
-        <ul class="footer__menu">
+        <ul class="footer__menu" id="ul__footer">
             <p> Seguinos en nuestras <b>Redes Sociales</b></p>
             <a href="https://instagram.com/cdkot" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
             <a href="https://facebook.com" target="_blank"> <img src="./icon/facebook.png" alt="Facebook"></a>
@@ -110,5 +127,7 @@
             Copyright - Todos los derechos reservados
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="js-bst/bootstrap.min.js"></script>
 </body>
 </html>
