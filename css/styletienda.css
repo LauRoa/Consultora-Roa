@@ -22,6 +22,9 @@
     border-radius: 20px;
     max-width: 100%;
 }
+.botones__carrito{ 
+    text-align: center;
+}
 .botones__carrito input{
     color: aliceblue;
     background-color:rgb(55, 189, 55) ;
@@ -45,4 +48,19 @@
 }
 .longitud__textarea{
     max-width:100%;
+}
+@media (min-width:720px) {
+    textarea:focus{
+        background: rgb(226, 222, 222);
+        color: black;
+    }
+    input:focus{
+        background: rgb(226, 222, 222);
+        color: black;
+    }
+}
+@media (min-width:992px) {
+    .botones__carrito{ 
+        text-align: initial;
+    }   
 }
