@@ -19,23 +19,24 @@
     font-size: 1rem;
     text-align: justify;
 }
-h4{
-    color: aliceblue;
-}
 
+ .legend__modificada{
+     padding: 1rem;
+ }
 .elementos__formulario{
     font-size: 1.1rem;
     color:rgb(66, 63, 55);
-    padding: 0.5rem;
+    padding: 1rem;
     border: solid;
     border-color: rgb(66, 63, 55);
-    border-radius: 20px;
-    width: 15rem;
+    border-radius: 10px;
+    width: 100%;
 }
 .elementos__formulario label{
     display: block;
     color: aliceblue;
     padding: 0.4rem;
+    text-align: start;
 }
 .elementos__formulario select{
     color: aliceblue;
@@ -55,18 +56,66 @@ h4{
     border-color: gray;
     border-radius: 20px;
 }
+.botones__formulario{
+    text-align: center;
+    padding: 5px;
+}
 #asesoramiento{
     max-width: 100%;
 }
 
-@media (min-width:720px){
+#name{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+#apellido{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+#email{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+#consulta{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+.ubicación{
+    text-align: center;
+}
+.ubicación__maps{
+    max-width: 100%;
+}
+
+
+@media (min-width:768px){
     .section__contacto{
         text-align: justify;
     }
     .elementos__formulario{
-        width: 25rem;
+        max-width: 61%;
     }
     h4{
         color: rgb(66, 63, 55);
     }
+    .ubicación__maps{
+       position: relative;
+       padding-top: 180%;
+}
+@media (min-width:1200px){
+    .ubicación__maps{
+      padding-top: 105%;
+   }
 }
