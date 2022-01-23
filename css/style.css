@@ -40,13 +40,7 @@ h1,h2,h3,h4 {
     align-content: space-between;
     justify-content: space-between; 
 }
-.header__navbar--flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 2rem;
-}
+
 .header__navbar li{
     padding: 0.1rem;
 }

@@ -13,20 +13,35 @@
     margin-top: 3rem;
     padding: 0.3rem;
 }
-.img__organismos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .lugar__detrabajo{
     display: none;
 }
-.img4{
-    max-width: 100%;
+.img1,.img2,.img3,.img4,.img5{
+    width: 100%;
 }
-
-@media (min-width:720px){
-    
+.img__carousel{
+   padding:2.4rem;
+   width: 100%;
+   height: auto;
+}
+@media (max-width:768px){
+    .img__organismos{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    #carousel1{
+        display: none;
+    }
+    #carousel2{
+        display: none;
+    }
+    .img__organismos{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+    }   
     .lugar__detrabajo {
         display: inline-block;
     }
@@ -39,9 +54,5 @@
         margin-top: 5rem;
         max-width: 100%;
     }
-    .img__organismos{
-        flex-direction: row;
-        justify-content:space-evenly;
-        
-    }   
+
 }

@@ -3,11 +3,11 @@
 .elementos__carrito{
     font-size: 1.1rem;
     color:rgb(66, 63, 55);
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin: 5px;
     border: solid;
     border-color: rgb(66, 63, 55);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .elementos__carrito label{
     display: block;
@@ -44,21 +44,32 @@
 }
 
 .longitud__correo{
-    max-width:100%;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
 }
 .longitud__textarea{
-    max-width:100%;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
 }
-@media (min-width:720px) {
-    textarea:focus{
-        background: rgb(226, 222, 222);
-        color: black;
-    }
-    input:focus{
-        background: rgb(226, 222, 222);
-        color: black;
-    }
+textarea:focus{
+    background: rgb(226, 222, 222);
+    color: black;
 }
+input:focus{
+    background: rgb(226, 222, 222);
+    color: black;
+}
+
+.estilo__subtitulos--tienda{
+    color: aliceblue;
+}
+
 @media (min-width:992px) {
     .botones__carrito{ 
         text-align: initial;
