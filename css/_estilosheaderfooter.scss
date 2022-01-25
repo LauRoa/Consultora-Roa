@@ -10,7 +10,7 @@ body{
 }
 
 h1,h2,h3,h4 {
-    font: size 1.5em;
+    font: size 1.5rem;
     color: rgb(66, 63, 55);
     text-transform: uppercase;
 }
@@ -25,39 +25,38 @@ h1,h2,h3,h4 {
     width: 10rem;
     height: auto;
     margin-top: 0.3rem;
-}
-.header__logo img{
-    width: 80%;
-    padding: 1rem;
+    img{
+        width: 80%;
+        padding: 1rem;
+    }
 }
 .header__navbar{
-    background-image: url("../img/encabezado.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: auto;
     align-content: space-between;
-    justify-content: space-between; 
+    justify-content: space-between;
+    li{
+        padding: 0.1rem;
+    }
+    a{
+        text-transform: uppercase;
+        color: aliceblue;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        background-color: rgb(55, 189, 55);
+        padding: 0.2rem;
+        margin: 5px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+    }    
 }
 
-.header__navbar li{
-    padding: 0.1rem;
-}
-.header__navbar a{
-    text-transform: uppercase;
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.rem;
-    background-color: rgb(55, 189, 55);
-    padding: 0.2rem;
-    margin: 5px;
-    border: solid;
-    border-color: gray;
-    border-radius: 20px;
-    text-decoration: none;
-    text-align: center;
-}
 .navbar-brand__modificado{
     color: aliceblue;
 }
@@ -66,7 +65,7 @@ h1,h2,h3,h4 {
     text-transform: uppercase;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.rem;
+    font-size: 1rem;
     background-color: rgb(55, 189, 55);
     padding: 0.2rem;
     margin: 5px;
@@ -88,36 +87,36 @@ footer{
     height: auto;
     flex-direction: column;
     justify-content: space-between;
-    top: -1px;    
-}
-.footer__flex{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.footer__menu{
-    list-style-type:none;
-    text-align: center;
-}
-
-.footer__menu a{
-    text-decoration: none ;
+    top: -1px;
+    .footer__flex{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__menu{
+        list-style-type:none;
+        text-align: center;
+        a{
+            text-decoration: none ;
+        }
+        img{
+            max-width: 8%;
+        }
+    }
 }
 .footer__credito{
     text-align: center;
     font-size: 0.7rem;
     margin-bottom: 5px;
 }
-.footer img{
-    max-width: 8%;
-}
 .direccion{
     text-align: center;
     font-size: 0.7rem;
 }
+/*------ CAMBIA TAMAÑO ELEMENTOS FOOTER SEGUN LA RESOLUCIÓN-----*/
 @media (min-width:720px){
     .footer img{
-        max-width: 5%;
+        width: 5%;
     }
     .direccion{
         font-size:0.8rem;
@@ -125,7 +124,7 @@ footer{
 }
 @media (min-width:1200px){
     .footer img{
-        max-width: 3%;
+        width: 3%;
     }
     .direccion{
         font-size: 1.1rem;

@@ -1,5 +1,5 @@
 
-/* -----CONTACTO ---- */
+/* -----ESTILOS CONTACTO ---- */
 .contenedor__contacto{
     align-items: center;
     justify-items: stretch;
@@ -7,6 +7,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    h4{
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: justify;
+    }
 }
 
 .section__contacto{
@@ -14,13 +19,8 @@
     line-height: 1.8rem;
     text-align: center;
 }
-.contenedor__contacto h4{
-    padding: 1rem;
-    font-size: 1rem;
-    text-align: justify;
-}
 
- .legend__modificada{
+.legend__modificada{
      padding: 1rem;
  }
 .elementos__formulario{
@@ -31,39 +31,38 @@
     border-color: rgb(66, 63, 55);
     border-radius: 10px;
     width: 100%;
-}
-.elementos__formulario label{
-    display: block;
-    color: aliceblue;
-    padding: 0.4rem;
-    text-align: start;
-}
-.elementos__formulario select{
-    color: aliceblue;
-    background-color:rgb(55, 189, 55) ;
-    padding: 0.4rem;
-    margin: 2px;
-    border: solid;
-    border-color: gray;
-    border-radius: 20px;
-}
-.botones__formulario input{
-    color: aliceblue;
-    background-color:rgb(55, 189, 55) ;
-    padding: 0.4rem;
-    margin: 2px;
-    border: solid;
-    border-color: gray;
-    border-radius: 20px;
+    label{
+        display: block;
+        color: aliceblue;
+        padding: 0.4rem;
+        text-align: start;
+    }
+    select{
+        color: aliceblue;
+        background-color:rgb(55, 189, 55) ;
+        padding: 0.4rem;
+        margin: 2px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+    }
 }
 .botones__formulario{
     text-align: center;
     padding: 5px;
+    input{
+        color: aliceblue;
+        background-color:rgb(55, 189, 55) ;
+        padding: 0.4rem;
+        margin: 2px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+    }
 }
 #asesoramiento{
     max-width: 100%;
 }
-
 #name{
     display: block;
     width: 100%;
@@ -99,8 +98,6 @@
     max-width: 100%;
     border-radius: 10px;
 }
-
-
 @media (min-width:768px){
     .section__contacto{
         text-align: justify;
@@ -114,6 +111,7 @@
     .ubicación__maps{
        position: relative;
        padding-top: 180%;
+    }
 }
 @media (min-width:1200px){
     .ubicación__maps{

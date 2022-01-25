@@ -1,14 +1,24 @@
 
-/* CLIENTES */
+/*----- ESTILOS CLIENTES -----*/
 .cliente {
     display: inline-block;
     font-size: 1.5rem;
     color:rgb(66, 63, 55) ;
     padding-top: 15px;
     margin-bottom: 10px;
+    a:hover{
+        background-color: powderblue;
+    }
+    a:visited{
+        color: rgb(235, 13, 13);
+    }
 }
 .clientes{
     padding-left: 2rem;
+}
+.nuestros__clientes{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 .section__contenido{
     background-color: rgb(129, 236, 138);
@@ -18,14 +28,4 @@
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
-}
-.nuestros__clientes{
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-}
-.cliente a:hover{
-    background-color: powderblue;
-}
-.cliente a:visited{
-    color: rgb(235, 13, 13);
 }

@@ -1,4 +1,4 @@
-/*TIENDA*/
+/*-----ESTILOS DE LA TIENDA-----*/
 
 .elementos__carrito{
     font-size: 1.1rem;
@@ -8,33 +8,32 @@
     border: solid;
     border-color: rgb(66, 63, 55);
     border-radius: 10px;
-}
-.elementos__carrito label{
-    display: block;
-}
-.elementos__carrito select{
-    color: aliceblue;
-    background-color:rgb(55, 189, 55) ;
-    padding: 0.4rem;
-    margin: 2px;
-    border: solid;
-    border-color: gray;
-    border-radius: 20px;
-    max-width: 100%;
+    label{
+        display: block;
+    }
+    select{
+        color: aliceblue;
+        background-color:rgb(55, 189, 55) ;
+        padding: 0.4rem;
+        margin: 2px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+        max-width: 100%;
+    }
 }
 .botones__carrito{ 
     text-align: center;
+    input{
+        color: aliceblue;
+        background-color:rgb(55, 189, 55) ;
+        padding: 0.4rem;
+        margin: 2px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+    }
 }
-.botones__carrito input{
-    color: aliceblue;
-    background-color:rgb(55, 189, 55) ;
-    padding: 0.4rem;
-    margin: 2px;
-    border: solid;
-    border-color: gray;
-    border-radius: 20px;
-}
-
 .section__contenido{
     background-color: rgb(129, 236, 138);
     padding: 1rem;
@@ -42,7 +41,6 @@
     line-height: 1.8rem;
     text-align: justify;
 }
-
 .longitud__correo{
     display: block;
     width: 100%;
@@ -65,11 +63,11 @@ input:focus{
     background: rgb(226, 222, 222);
     color: black;
 }
-
 .estilo__subtitulos--tienda{
     color: aliceblue;
 }
 
+/*-----ALINEACION BOTONES SEGUN LA RESOLUCIÓN -----*/
 @media (min-width:992px) {
     .botones__carrito{ 
         text-align: initial;
