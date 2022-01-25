@@ -2,16 +2,16 @@
 /*----------CONTENIDO DEL INDICE ----------*/
 
 .section__organismos{
-                    background-color: rgb(129, 236, 138);
-                    padding: 1rem;
-                    font-size: 1.3rem;
-                    line-height: 1.8rem;
-                    text-align: justify;
-                    img{
-                        max-height: 7rem;
-                        margin-top: 3rem;
-                        padding: 0.3rem;
-                    }
+    background-color: $color-principal;
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    img{
+        max-height: 7rem;
+        margin-top: 3rem;
+        padding: 0.3rem;
+    }
 }
 
 .lugar__detrabajo{
