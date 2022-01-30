@@ -1,31 +1,35 @@
 
 /*----- ESTILOS CLIENTES -----*/
-.cliente {
-    display: inline-block;
-    font-size: 1.5rem;
-    color:rgb(66, 63, 55) ;
-    padding-top: 15px;
-    margin-bottom: 10px;
-    a:hover{
-        background-color: powderblue;
-    }
-    a:visited{
-        color: rgb(235, 13, 13);
-    }
+h4{
+    max-width: 100% !important;
+    font-size:1.25rem !important;
+    text-align: center;
 }
 .clientes{
     padding-left: 2rem;
 }
-.nuestros__clientes{
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-}
 .section__contenido{
-    background-color: $color-principal;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 2rem;
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
+}
+.tarjeta{
+    background-color: rgb(66, 63, 55) !important;
+    color:$color-texto;
+    justify-content: center;
+    width:100% !important;
+}
+
+.fila__cards{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.columna__cards{
+    padding: 2rem;
 }

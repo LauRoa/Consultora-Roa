@@ -1,0 +1,39 @@
+/*----- ESTILOS PLATAFORMA -----*/
+.section__plataforma{
+    padding: 1rem;
+    line-height: 1.8rem;
+    width: 100%;
+}
+.contenedor__plataforma{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+.botones__formulario{
+    max-width:100%;
+}
+.elementos__formulario--plataforma{
+    font-size: 1.1rem;
+    color:rgb(66, 63, 55);
+    padding: 1rem;
+    border: solid;
+    border-color: rgb(66, 63, 55);
+    border-radius: 10px;
+    width: 100%;
+    label{
+        display: block;
+        color: aliceblue;
+        padding: 0.4rem;
+        text-align: start;
+    }
+    select{
+        color: aliceblue;
+        background-color:$color-botones ;
+        padding: 0.4rem;
+        margin: 2px;
+        border: solid;
+        border-color: gray;
+        border-radius: 20px;
+    }
+}

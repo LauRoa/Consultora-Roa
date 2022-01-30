@@ -1,8 +1,11 @@
-$color-principal:rgb(129, 236, 138); 
+/*$color-principal:;*/
+$color-texto: aliceblue;
+$color-botones: rgb(8,104,172);
 @import "css/estilosheaderfooter";
 @import "css/index";
 @import "css/sobrenosotros";
 @import "css/tienda";
 @import "css/clientes";
 @import "css/contacto";
+@import "css/plataforma";
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

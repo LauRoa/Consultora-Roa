@@ -13,7 +13,6 @@
         text-align: justify;
     }
 }
-
 .section__contacto{
     padding: 1rem;
     line-height: 1.8rem;
@@ -22,6 +21,7 @@
 
 .legend__modificada{
      padding: 1rem;
+     color: $color-texto;
  }
 .elementos__formulario{
     font-size: 1.1rem;
@@ -39,7 +39,7 @@
     }
     select{
         color: aliceblue;
-        background-color:rgb(55, 189, 55) ;
+        background-color:$color-botones ;
         padding: 0.4rem;
         margin: 2px;
         border: solid;
@@ -52,12 +52,13 @@
     padding: 5px;
     input{
         color: aliceblue;
-        background-color:rgb(55, 189, 55) ;
+        background-color:$color-botones ;
         padding: 0.4rem;
         margin: 2px;
         border: solid;
         border-color: gray;
         border-radius: 20px;
+        max-width: 100%;
     }
 }
 #asesoramiento{
@@ -105,9 +106,7 @@
     .elementos__formulario{
         max-width: 61%;
     }
-    h4{
-        color: rgb(66, 63, 55);
-    }
+
     .ubicación__maps{
        position: relative;
        padding-top: 180%;

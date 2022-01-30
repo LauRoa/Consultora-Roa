@@ -11,7 +11,7 @@ body{
 
 h1,h2,h3,h4 {
     font: size 1.5rem;
-    color: rgb(66, 63, 55);
+    color: $color-texto;
     text-transform: uppercase;
 }
 #ul__footer{
@@ -46,7 +46,7 @@ h1,h2,h3,h4 {
         color: aliceblue;
         font-family: 'Courier New', Courier, monospace;
         font-size: 1rem;
-        background-color: rgb(55, 189, 55);
+        background-color: $color-botones;
         padding: 0.2rem;
         margin: 5px;
         border: solid;
@@ -66,7 +66,7 @@ h1,h2,h3,h4 {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    background-color: rgb(55, 189, 55);
+    background-color: $color-botones;
     padding: 0.2rem;
     margin: 5px;
     border: solid;
@@ -79,8 +79,8 @@ h1,h2,h3,h4 {
 footer{
     display: flex;
     background: rgb(69,96,79);
-    background: linear-gradient(90deg, rgba(69,96,79,0.5163107479319853) 15%, rgba(42,45,42,0.9224732129179797) 52%);
-    color: white;
+    background: linear-gradient(90deg, rgba(69, 96, 79, 0.516311) 15%, rgba(42, 45, 42, 0.922473) 52%);
+    color: $color-texto;
     background-size: cover;
     background-position: center;
     width: 100%;

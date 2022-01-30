@@ -13,20 +13,20 @@
     }
     select{
         color: aliceblue;
-        background-color:rgb(55, 189, 55) ;
+        background-color:$color-botones;
         padding: 0.4rem;
         margin: 2px;
         border: solid;
         border-color: gray;
         border-radius: 20px;
-        max-width: 100%;
+        width: 100%;
     }
 }
 .botones__carrito{ 
     text-align: center;
     input{
         color: aliceblue;
-        background-color:rgb(55, 189, 55) ;
+        background-color:$color-botones ;
         padding: 0.4rem;
         margin: 2px;
         border: solid;
@@ -35,7 +35,6 @@
     }
 }
 .section__contenido{
-    background-color: $color-principal;
     padding: 1rem;
     font-size: 1.3rem;
     line-height: 1.8rem;

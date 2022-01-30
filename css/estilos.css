@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*$color-principal:;*/
 *:not(img) {
   padding: 0px;
   margin: 0px;
@@ -14,7 +15,7 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font: size 1.5rem;
-  color: #423f37;
+  color: aliceblue;
   text-transform: uppercase;
 }
 
@@ -60,7 +61,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.2rem;
   margin: 5px;
   border: solid;
@@ -80,7 +81,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.2rem;
   margin: 5px;
   border: solid;
@@ -98,7 +99,7 @@ footer {
   background: #45604f;
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(69, 96, 79, 0.516311)), color-stop(52%, rgba(42, 45, 42, 0.922473)));
   background: linear-gradient(90deg, rgba(69, 96, 79, 0.516311) 15%, rgba(42, 45, 42, 0.922473) 52%);
-  color: white;
+  color: aliceblue;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -167,8 +168,12 @@ footer .footer__menu img {
 }
 
 /*----------CONTENIDO DEL INDICE ----------*/
+body {
+  background-image: radial-gradient(circle, #608ccf, #5995d1, #579ed1, #59a6d1, #60adcf);
+}
+
 .section__organismos {
-  background-color: #81ec8a;
+  color: aliceblue;
   padding: 1rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -271,6 +276,7 @@ footer p {
 }
 
 .nosotros {
+  color: aliceblue;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -305,13 +311,13 @@ footer p {
 
 .elementos__carrito select {
   color: aliceblue;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.4rem;
   margin: 2px;
   border: solid;
   border-color: gray;
   border-radius: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .botones__carrito {
@@ -320,7 +326,7 @@ footer p {
 
 .botones__carrito input {
   color: aliceblue;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.4rem;
   margin: 2px;
   border: solid;
@@ -329,7 +335,6 @@ footer p {
 }
 
 .section__contenido {
-  background-color: #81ec8a;
   padding: 1rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -374,39 +379,48 @@ input:focus {
 }
 
 /*----- ESTILOS CLIENTES -----*/
-.cliente {
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #423f37;
-  padding-top: 15px;
-  margin-bottom: 10px;
-}
-
-.cliente a:hover {
-  background-color: powderblue;
-}
-
-.cliente a:visited {
-  color: #eb0d0d;
+h4, .h4 {
+  max-width: 100% !important;
+  font-size: 1.25rem !important;
+  text-align: center;
 }
 
 .clientes {
   padding-left: 2rem;
 }
 
-.nuestros__clientes {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-}
-
 .section__contenido {
-  background-color: #81ec8a;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 2rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-align: justify;
+}
+
+.tarjeta {
+  background-color: #423f37 !important;
+  color: aliceblue;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100% !important;
+}
+
+.fila__cards {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.columna__cards {
+  padding: 2rem;
 }
 
 /* -----ESTILOS CONTACTO ---- */
@@ -435,6 +449,7 @@ input:focus {
 
 .legend__modificada {
   padding: 1rem;
+  color: aliceblue;
 }
 
 .elementos__formulario {
@@ -456,7 +471,7 @@ input:focus {
 
 .elementos__formulario select {
   color: aliceblue;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.4rem;
   margin: 2px;
   border: solid;
@@ -471,12 +486,13 @@ input:focus {
 
 .botones__formulario input {
   color: aliceblue;
-  background-color: #37bd37;
+  background-color: #0868ac;
   padding: 0.4rem;
   margin: 2px;
   border: solid;
   border-color: gray;
   border-radius: 20px;
+  max-width: 100%;
 }
 
 #asesoramiento {
@@ -531,9 +547,6 @@ input:focus {
   .elementos__formulario {
     max-width: 61%;
   }
-  h4, .h4 {
-    color: #423f37;
-  }
   .ubicación__maps {
     position: relative;
     padding-top: 180%;
@@ -544,6 +557,53 @@ input:focus {
   .ubicación__maps {
     padding-top: 105%;
   }
+}
+
+/*----- ESTILOS PLATAFORMA -----*/
+.section__plataforma {
+  padding: 1rem;
+  line-height: 1.8rem;
+  width: 100%;
+}
+
+.contenedor__plataforma {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.botones__formulario {
+  max-width: 100%;
+}
+
+.elementos__formulario--plataforma {
+  font-size: 1.1rem;
+  color: #423f37;
+  padding: 1rem;
+  border: solid;
+  border-color: #423f37;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.elementos__formulario--plataforma label {
+  display: block;
+  color: aliceblue;
+  padding: 0.4rem;
+  text-align: start;
+}
+
+.elementos__formulario--plataforma select {
+  color: aliceblue;
+  background-color: #0868ac;
+  padding: 0.4rem;
+  margin: 2px;
+  border: solid;
+  border-color: gray;
+  border-radius: 20px;
 }
 
 /*!
