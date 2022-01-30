@@ -9,10 +9,6 @@
   text-decoration: none;
 }
 
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font: size 1.5rem;
   color: aliceblue;
@@ -57,9 +53,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .header__navbar a {
+  font-family: var(--bs-body-font-family);
   text-transform: uppercase;
   color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   background-color: #0868ac;
   padding: 0.2rem;
@@ -321,6 +317,7 @@ footer p {
 }
 
 .botones__carrito {
+  padding: 1rem;
   text-align: center;
 }
 
@@ -335,7 +332,8 @@ footer p {
 }
 
 .section__contenido {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-align: justify;
@@ -368,14 +366,34 @@ input:focus {
 }
 
 .estilo__subtitulos--tienda {
+  color: #0c0c0c;
+  text-align: start;
+}
+
+.imagen__cards {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  max-height: 300px !important;
+  width: auto !important;
+}
+
+.tarjeta__tienda {
+  color: #0c0c0c !important;
+  border-radius: 10px !important;
+  border: solid !important;
+  border-color: #423f37 !important;
+  background-color: #e5e5e5 !important;
   color: aliceblue;
 }
 
-/*-----ALINEACION BOTONES SEGUN LA RESOLUCIÓN -----*/
-@media (min-width: 992px) {
-  .botones__carrito {
-    text-align: initial;
-  }
+.fila__cards {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*----- ESTILOS CLIENTES -----*/
@@ -389,7 +407,7 @@ h4, .h4 {
   padding-left: 2rem;
 }
 
-.section__contenido {
+.section__contenido--clientes {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 2rem;
@@ -407,7 +425,7 @@ h4, .h4 {
   width: 100% !important;
 }
 
-.fila__cards {
+.fila__cards--clientes {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -415,7 +433,6 @@ h4, .h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
   padding-left: 2rem;
 }
 
@@ -604,6 +621,12 @@ h4, .h4 {
   border: solid;
   border-color: gray;
   border-radius: 20px;
+}
+
+.olvido__clave {
+  color: #b81111;
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
 
 /*!

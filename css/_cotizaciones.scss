@@ -23,6 +23,7 @@
     }
 }
 .botones__carrito{ 
+    padding: 1rem;
     text-align: center;
     input{
         color: aliceblue;
@@ -35,7 +36,8 @@
     }
 }
 .section__contenido{
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
@@ -63,12 +65,27 @@ input:focus{
     color: black;
 }
 .estilo__subtitulos--tienda{
-    color: aliceblue;
+    color: #0c0c0c;
+    text-align: start;
 }
 
-/*-----ALINEACION BOTONES SEGUN LA RESOLUCIÓN -----*/
-@media (min-width:992px) {
-    .botones__carrito{ 
-        text-align: initial;
-    }   
+.imagen__cards{
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    max-height: 300px !important;
+    width: auto !important;
+}
+
+.tarjeta__tienda{
+    color:#0c0c0c !important;
+    border-radius: 10px !important;
+    border: solid !important;
+    border-color: #423f37 !important;
+    background-color: #e5e5e5 !important;
+    color:$color-texto;
+}
+.fila__cards{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./img/logo.png" alt = "logo CDKOT">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css-bst/bootstrap.min.css">
-    <title>Tienda</title>
+    <title>Cotizaciones</title>
 </head>
 <body>
     
@@ -29,7 +29,7 @@
                 <a class="nav-link__modificado" aria-current="page" href="sobrenosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link__modificado" href="tienda.html">Tienda</a>
+                <a class="nav-link__modificado" href="cotizaciones.html">Cotizaciones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link__modificado" href="clientes.html">Clientes</a>
@@ -47,65 +47,77 @@
     <div class="container-fluid">
         <section class="section__contenido">
             <h4 class="titulo">SOLICITE AQUÍ LA COTIZACIÓN A REALIZAR SEGUN EL ORGANISMO</h4>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="opds">
-                        <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4); background-image:url(./img/Bosques.jpg);">
-                                <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">OPDS</legend>
-                                <select name="trabajoOpds" id="trabajoOpds">
-                                    <option value="">Seleccioná el trabajo que desea realizar</option>
-                                    <option value="AA">Auditoria Ambiental - AA</option>
-                                    <option value="EIA"> Estudio de Impacto Ambiental - EIA</option> 
-                                    <option value="RREE">Residuos Especiales - RREE </option>
-                                    <option value="LEGA">Efluentes Gaseosos - LEGA </option>
-                                </select>
-                                <label for="email" class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
-                                <label for="consulta"class="estilo__subtitulos--tienda">Información Adicional </label>
-                                <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
-                                <div class ="botones__carrito">
-                                    <input type="submit" value="Recibir cotización">
-                                    <input type="reset" value="Vaciar carrito">
-                                </div>
-                            </fieldset>
-                        </form>
+        </section>
+        <div class="fila__cards row">
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/bosques.jpg" alt="imagen bosques">
+                    <div class="card-body">
+                      <h5 class="card-title">Ministerio de Ambiente de la Provincia de Buenos Aires</h5>
+                      <div class="opds">
+                            <form action="">
+                                <fieldset class= "elementos__carrito">
+                                    <!-- Menu desplegable-->
+                                    <select name="trabajoOpds" id="trabajoOpds">
+                                        <option value="">Seleccioná el trabajo que desea realizar</option>
+                                        <option value="AA">Auditoria Ambiental - AA</option>
+                                        <option value="EIA"> Estudio de Impacto Ambiental - EIA</option> 
+                                        <option value="RREE">Residuos Especiales - RREE </option>
+                                        <option value="LEGA">Efluentes Gaseosos - LEGA </option>
+                                    </select>
+                                    <label for="email" class="estilo__subtitulos--tienda">Email </label>
+                                    <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
+                                    <label for="consulta"class="estilo__subtitulos--tienda">Información Adicional </label>
+                                    <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                                    <div class ="botones__carrito">
+                                        <input type="submit" value="Recibir cotización">
+                                        <input type="reset" value="Vaciar carrito">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="ada">
-                        <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4);background-image: url(./img/Arroyo.jpg);"> 
-                                <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">ADA</legend>
-                                <select name="trabajoAda" id="trabajoAda">
-                                    <option value="">Seleccioná el trabajo que desea realizar</option>
-                                    <option value="PH">Prefactibilidad hidrica</option>
-                                    <option value="PE"> Permiso de explotación</option> 
-                                    <option value="PV">Permiso de vuelco de efluentes liquidos </option>
-                                    <option value="AH">Aptitud hidraulica </option>
-                                </select>
-                                <label for="email"class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
-                                <label for="consulta"class="estilo__subtitulos--tienda">Información Adicional </label>
-                                <textarea class="longitud__textarea" class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
-                                <div class ="botones__carrito">
-                                    <input type="submit" value="Recibir cotización">
-                                    <input type="reset" value="Vaciar carrito">
-                                </div>
-                            </fieldset>
-                        </form>
+            </div>  
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/Arroyo.jpg" alt="imagen arroyo">
+                    <div class="card-body">
+                      <h5 class="card-title">Autoridad del Agua de la Provincia de Buenos Aires</h5>
+                      <div class="ada">
+                            <form action="">
+                                <fieldset class= "elementos__carrito">
+                                    <!-- Menu desplegable-->
+                                    <select name="trabajoAda" id="trabajoAda">
+                                        <option value="">Seleccioná el trabajo que desea realizar</option>
+                                        <option value="PH">Prefactibilidad hidrica</option>
+                                        <option value="PE"> Permiso de explotación</option> 
+                                        <option value="PV">Permiso de vuelco de efluentes liquidos </option>
+                                        <option value="AH">Aptitud hidraulica </option>
+                                    </select>
+                                    <label for="email" class="estilo__subtitulos--tienda">Email </label>
+                                    <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
+                                    <label for="consulta"class="estilo__subtitulos--tienda">Información Adicional </label>
+                                    <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
+                                    <div class ="botones__carrito">
+                                        <input type="submit" value="Recibir cotización">
+                                        <input type="reset" value="Vaciar carrito">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="secretaria">
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/ambiental-sustentable-j.jpg" alt="imagen ambiental">
+                    <div class="card-body">
+                      <h5 class="card-title">Ministerio de Ambiente de la Republica Argentina</h5>
+                      <div class="secretaria">
                         <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4);background-image: url(./img/ambiental-sustentable-j.jpg);">
+                            <fieldset class= "elementos__carrito">
                                 <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">Secretaria de Ambiente Nacion</legend>
                                 <select name="trabajoOpds" id="trabajoOpds">
                                     <option value="">Seleccioná el trabajo que desea realizar</option>
                                     <option value="AA">Insc. generador de resid. peligrosos</option>
@@ -114,7 +126,7 @@
                                     <option value="LEGA">Otra consulta </option>
                                 </select>
                                 <label for="email" class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
+                                <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
                                 <label for="consulta" class="estilo__subtitulos--tienda">Información Adicional </label>
                                 <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
                                 <div class ="botones__carrito">
@@ -124,20 +136,27 @@
                             </fieldset>
                         </form>
                     </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="colegio">
+            </div>  
+        </div>
+        <div class="fila__cards row">
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/Ingenieria.jpg" alt="imagen ingenieria">
+                    <div class="card-body">
+                      <h5 class="card-title">Colegio de Ingenieros de la Provincia de Buenos Aires</h5>
+                      <div class="colegio">
                         <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4);background-image: url(./img/Ingenieria.jpg);">
+                            <fieldset class= "elementos__carrito">
                                 <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">Colegio de Ingenieros</legend>
                                 <select name="trabajoColegio" id="trabajoColegio">
                                     <option value="">Seleccioná el trabajo que desea realizar</option>
                                     <option value="CC">Contratos Civiles</option>
                                     <option value="CM">Contrato Medio Ambiente</option> 
                                 </select>
                                 <label for="email" class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
+                                <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
                                 <label for="consulta"class="estilo__subtitulos--tienda">Información Adicional </label>
                                 <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
                                 <div class ="botones__carrito">
@@ -147,22 +166,25 @@
                             </fieldset>
                         </form>
                     </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="apra">
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/ing-ambiental.jpg" alt="imagen ambiental">
+                    <div class="card-body">
+                      <h5 class="card-title">Agencia de Protección Ambiental - C.A.B.A</h5>
+                      <div class="apra">
                         <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4);background-image: url(./img/ing-ambiental.jpg);background-size:cover;"> 
+                            <fieldset class= "elementos__carrito"> 
                                 <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">APrA</legend>
                                 <select name="trabajoColegio" id="trabajoColegio">
                                     <option value="">Seleccioná el trabajo que desea realizar</option>
                                     <option value="RAC">Inscripcion y renovación en el RAC</option>
                                     <option value="REF">Inscripcion y solicitud de REF</option> 
                                 </select>
                                 <label for="email" class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
+                                <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
                                 <label for="consulta" class="estilo__subtitulos--tienda">Información Adicional </label>
                                 <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
                                 <div class ="botones__carrito">
@@ -172,13 +194,18 @@
                             </fieldset>
                         </form>
                     </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="otras__provincias">
+            </div>  
+            <div class="columna__cards col-sm-12 col-md-4 col-xl-4">
+                <div class="tarjeta__tienda card" style="max-width: 100%;">
+                    <img class="card-img-top imagen__cards" src="./img/ing-ambiental1.jpg" alt="imagen ingenieria">
+                    <div class="card-body">
+                      <h5 class="card-title">Otras provincias</h5>
+                      <div class="otras__provincias">
                         <form action="">
-                            <fieldset class= "elementos__carrito" style="background-color: rgba(155,175,155,0.4);background-image: url(./img/ingenieria-2.jpg);">
+                            <fieldset class= "elementos__carrito">
                                 <!-- Menu desplegable-->
-                                <legend class="estilo__subtitulos--tienda">Otras provincias</legend>
                                 <select name="trabajoColegio" id="trabajoColegio">
                                     <option value="">Seleccioná el trabajo que desea realizar</option>
                                     <option value="RAC">Auditoria ambiental</option>
@@ -186,7 +213,7 @@
                                     <option value="REF">Efluentes gaseosos</option> 
                                 </select>
                                 <label for="email" class="estilo__subtitulos--tienda">Email </label>
-                                <input class="longitud__correo" type="temail" name="email" id="email" placeholder="name@example.com" required>                      
+                                <input class="longitud__correo" type="email" name="email" id="email" placeholder="name@example.com" required>                      
                                 <label for="consulta" class="estilo__subtitulos--tienda">Información Adicional </label>
                                 <textarea class="longitud__textarea" name="consulta" id="consulta" cols="30" rows="5" placeholder=" Breve descripcion del trabajo a realizar"></textarea>
                                 <div class ="botones__carrito">
@@ -196,9 +223,10 @@
                             </fieldset>
                         </form>
                     </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <footer class = "footer">
