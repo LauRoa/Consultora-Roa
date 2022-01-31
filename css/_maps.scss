@@ -1,0 +1,22 @@
+/* MAPS */
+$mapRedes:(mercadolibre:rgb(184, 184, 21),raizen:purple,ypf:rgb(32, 32, 182), arcor:blue,honda:red,catalent:rgb(63, 153, 206));
+
+@each $red, $color in $mapRedes {
+    .#{$red}--link{
+        color:$color;
+    }
+}
+
+/* MAP - GET */
+
+$estilo:(
+    color: rgb(184, 17, 17),
+    tamFuente:0.85rem,
+    bordes: 0.5rem,
+);
+
+.olvido__clave--mapget{
+    color: map-get($estilo , color);
+   font-size: map-get($estilo, tamFuente);
+   padding: map-get($estilo,bordes );
+}

@@ -6,30 +6,13 @@ footer p{
     text-align: center;
 }
 /* ------ NOSOTROS ------ */
-
-.vision{ 
-    font-style: italic;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-}
 .contenedor__video{
     text-align: center;
     margin-bottom: 1rem;
+    margin-right: 1% !important;
 }
 .dimension__video{
   max-width: 100%;
-}
-.quienes__somos{
-    padding-left: 1rem;
-}
-.nosotros{
-    color:$color-texto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem; 
-    padding-right: 2rem;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
 }
 /*----- REDIMENSIONADO DEL TAMAÑO DEL VIDEO SEGUN LA RESOLUCION-----*/
 @media (min-width:720px){

@@ -1,0 +1,28 @@
+/*EXTEND */
+.nosotros{
+    color:$color-texto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+    padding-right: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.vision{
+    @extend .nosotros;
+    font-style: italic;
+    text-align: end;
+}
+
+h1,h2,h3,h4 {
+    font: size 1.5rem;
+    color: $color-texto;
+    text-transform: uppercase;
+}
+
+.h1__encabezados{
+    @extend .h1;
+    padding:1rem;
+    text-align: center;
+    background-color: $color-botones;
+}
