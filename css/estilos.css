@@ -8,10 +8,8 @@
   text-decoration: none;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font: size 1.5rem;
-  color: aliceblue;
-  text-transform: uppercase;
+body {
+  background-image: radial-gradient(circle, #608ccf, #5995d1, #579ed1, #59a6d1, #60adcf);
 }
 
 #ul__footer {
@@ -23,10 +21,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 /*----------CONTENIDO DEL INDICE ----------*/
-body {
-  background-image: radial-gradient(circle, #608ccf, #5995d1, #579ed1, #59a6d1, #60adcf);
-}
-
 .section__organismos {
   color: aliceblue;
   padding: 1rem;
@@ -119,10 +113,6 @@ footer p {
 
 .dimension__video {
   max-width: 100%;
-}
-
-.quienes__somos {
-  padding-left: 1rem;
 }
 
 /*----- REDIMENSIONADO DEL TAMAÑO DEL VIDEO SEGUN LA RESOLUCION-----*/
@@ -247,10 +237,6 @@ h4, .h4 {
   text-align: center;
 }
 
-.clientes {
-  padding-left: 2rem;
-}
-
 .section__contenido--clientes {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -308,9 +294,8 @@ h4, .h4 {
   text-align: center;
 }
 
-.legend__modificada {
-  padding: 1rem;
-  color: aliceblue;
+.h1__contacto {
+  margin-bottom: 0px !important;
 }
 
 .elementos__formulario {
@@ -655,6 +640,18 @@ footer .footer__menu img {
   text-align: end;
 }
 
+h1, .h1, .h1__encabezados, h2, .h2, h3, .h3, h4, .h4 {
+  font: size 1.5rem;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.h1__encabezados {
+  padding: 1rem;
+  text-align: center;
+  background-color: #0868ac;
+}
+
 /* MIXIN CON PARAMETROS */
 .parrafoConEstiloyParametros {
   font-size: 1.3rem;
@@ -763,19 +760,19 @@ hr:not([size]) {
   height: 1px;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, .h1__encabezados, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, .h1 {
+h1, .h1, .h1__encabezados {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
-  h1, .h1 {
+  h1, .h1, .h1__encabezados {
     font-size: 2.5rem;
   }
 }
