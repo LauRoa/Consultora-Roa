@@ -42,7 +42,7 @@ h1,h2,h3,h4 {
         font-family: var(--bs-body-font-family);
         text-transform: uppercase;
         color: aliceblue;
-        font-size: 1rem;
+        font-size: $tam-fuente;
         background-color: $color-botones;
         padding: 0.2rem;
         margin: 5px;
@@ -62,7 +62,7 @@ h1,h2,h3,h4 {
     text-transform: uppercase;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: $tam-fuente;
     background-color: $color-botones;
     padding: 0.2rem;
     margin: 5px;
@@ -103,12 +103,12 @@ footer{
 }
 .footer__credito{
     text-align: center;
-    font-size: 0.7rem;
+    font-size: $tam-fuente*0.7;
     margin-bottom: 5px;
 }
 .direccion{
     text-align: center;
-    font-size: 0.7rem;
+    font-size: $tam-fuente*0.7;
 }
 /*------ CAMBIA TAMAÑO ELEMENTOS FOOTER SEGUN LA RESOLUCIÓN-----*/
 @media (min-width:720px){
