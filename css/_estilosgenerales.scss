@@ -1,0 +1,19 @@
+*:not(img){
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+    font: size 1.5rem;
+    color: $color-texto;
+    text-transform: uppercase;
+}
+#ul__footer{
+    padding-right: 2rem ;
+}
+.ul__desplazados{
+    padding-left: 0rem ;
+}

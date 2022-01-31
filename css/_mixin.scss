@@ -1,0 +1,13 @@
+/* MIXIN CON PARAMETROS */
+
+@mixin parrafoConParametros($size,$alineacion,$padding,$padding-top,$color,$transformacion) {
+    font-size: $size;
+    text-align: $alineacion;
+    padding: $padding;
+    color:$color;
+    padding-top: $padding-top;
+    text-transform:$transformacion;
+}
+.parrafoConEstiloyParametros{
+    @include parrafoConParametros(1.3rem,justifyr,1rem,2rem,aliceblue,uppercase);
+}
