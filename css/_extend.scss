@@ -14,10 +14,16 @@
     text-align: end;
 }
 
-h1,h2,h3,h4 {
-    font: size 1.5rem;
+h1,h3,h4 {
+    font: size 1.4rem;
     color: $color-texto;
     text-transform: uppercase;
+}
+h2{
+    font: size 1.4rem;
+    color: $color-texto;
+    text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 .h1__encabezados{
@@ -25,4 +31,10 @@ h1,h2,h3,h4 {
     padding:1rem;
     text-align: center;
     background-color: $color-botones;
+}
+
+.h1__cuerpo{
+    @extend .h1;
+    padding:1rem;
+    text-align: center;
 }

@@ -32,7 +32,19 @@ body {
 .section__organismos img {
   max-height: 7rem;
   margin-top: 3rem;
-  padding: 0.3rem;
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+.section__organismos h2, .section__organismos .h2 {
+  width: 100%;
+  font-size: 1.5rem !important;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.section__organismos li {
+  padding: 0.5rem;
 }
 
 .lugar__detrabajo {
@@ -41,6 +53,10 @@ body {
 
 .img1, .img2, .img3, .img4, .img5 {
   width: 100%;
+}
+
+.img6, .img7, .img8 {
+  width: 95%;
 }
 
 .img__carousel {
@@ -56,12 +72,15 @@ body {
   }
 }
 
-/*----- NO MUESTRA CAROUSEL 1 NI 2*/
+/*----- NO MUESTRA CAROUSEL 1, 2 NI 3 */
 @media (min-width: 768px) {
   #carousel1 {
     display: none;
   }
   #carousel2 {
+    display: none;
+  }
+  #carousel3 {
     display: none;
   }
   .img__organismos {
@@ -81,17 +100,34 @@ body {
   }
   .lugar__detrabajo {
     display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
   }
   #pba {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 5rem;
-    max-width: 100%;
+    width: 110%;
   }
   #caba {
-    margin-top: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10rem;
     max-width: 100%;
+  }
+  #argentina {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3rem;
+    max-width: 70%;
   }
 }
 
@@ -231,12 +267,6 @@ input:focus {
 }
 
 /*----- ESTILOS CLIENTES -----*/
-h4, .h4 {
-  max-width: 100% !important;
-  font-size: 1.25rem !important;
-  text-align: center;
-}
-
 .section__contenido--clientes {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -276,7 +306,7 @@ h4, .h4 {
       -ms-flex-align: center;
           align-items: center;
   justify-items: stretch;
-  background-image: url(../img/Ingeniero-ambiental.jpg);
+  background-image: url(../img/Ingeniero-ambiental.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -454,14 +484,12 @@ h4, .h4 {
 
 /*-------------HEADER------------*/
 .header__logo {
-  width: 10rem;
+  width: 7rem;
   height: auto;
-  margin-top: 0.3rem;
 }
 
 .header__logo img {
-  width: 80%;
-  padding: 1rem;
+  width: 100%;
 }
 
 .header__navbar {
@@ -481,30 +509,15 @@ h4, .h4 {
   padding: 0.1rem;
 }
 
-.header__navbar a {
-  font-family: var(--bs-body-font-family);
-  text-transform: uppercase;
-  color: aliceblue;
-  font-size: 1 rem;
-  background-color: #0868ac;
-  padding: 0.2rem;
-  margin: 5px;
-  border: solid;
-  border-color: gray;
-  border-radius: 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
 .navbar-brand__modificado {
   color: aliceblue;
 }
 
 .nav-link__modificado {
   display: block;
+  font-family: var(--bs-body-font-family);
   text-transform: uppercase;
   color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1 rem;
   background-color: #0868ac;
   padding: 0.2rem;
@@ -559,7 +572,8 @@ footer .footer__menu a {
 }
 
 footer .footer__menu img {
-  max-width: 8%;
+  width: 15%;
+  height: auto;
 }
 
 .footer__credito {
@@ -575,8 +589,8 @@ footer .footer__menu img {
 
 /*------ CAMBIA TAMAÑO ELEMENTOS FOOTER SEGUN LA RESOLUCIÓN-----*/
 @media (min-width: 720px) {
-  .footer img {
-    width: 5%;
+  footer .footer__menu img {
+    width: 7%;
   }
   .direccion {
     font-size: 0.8rem;
@@ -584,8 +598,8 @@ footer .footer__menu img {
 }
 
 @media (min-width: 1200px) {
-  .footer img {
-    width: 3%;
+  footer .footer__menu img {
+    width: 4%;
   }
   .direccion {
     font-size: 1.1rem;
@@ -640,16 +654,28 @@ footer .footer__menu img {
   text-align: end;
 }
 
-h1, .h1, .h1__encabezados, h2, .h2, h3, .h3, h4, .h4 {
-  font: size 1.5rem;
+h1, .h1, .h1__encabezados, .h1__cuerpo, h3, .h3, h4, .h4 {
+  font: size 1.4rem;
   color: aliceblue;
   text-transform: uppercase;
+}
+
+h2, .h2 {
+  font: size 1.4rem;
+  color: aliceblue;
+  text-transform: uppercase;
+  padding-top: 2rem;
 }
 
 .h1__encabezados {
   padding: 1rem;
   text-align: center;
   background-color: #0868ac;
+}
+
+.h1__cuerpo {
+  padding: 1rem;
+  text-align: center;
 }
 
 /* MIXIN CON PARAMETROS */
@@ -760,19 +786,19 @@ hr:not([size]) {
   height: 1px;
 }
 
-h1, .h1, .h1__encabezados, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, .h1__encabezados, .h1__cuerpo, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, .h1, .h1__encabezados {
+h1, .h1, .h1__encabezados, .h1__cuerpo {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
-  h1, .h1, .h1__encabezados {
+  h1, .h1, .h1__encabezados, .h1__cuerpo {
     font-size: 2.5rem;
   }
 }

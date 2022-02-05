@@ -23,7 +23,8 @@ footer{
             text-decoration: none ;
         }
         img{
-            max-width: 8%;
+            width: 15%;
+            height: auto;
         }
     }
 }
@@ -38,16 +39,16 @@ footer{
 }
 /*------ CAMBIA TAMAÑO ELEMENTOS FOOTER SEGUN LA RESOLUCIÓN-----*/
 @media (min-width:720px){
-    .footer img{
-        width: 5%;
-    }
+    footer .footer__menu img{
+        width: 7%;
+     }
     .direccion{
         font-size:0.8rem;
     }
 }
 @media (min-width:1200px){
-    .footer img{
-        width: 3%;
+    footer .footer__menu img{
+        width: 4%;
     }
     .direccion{
         font-size: 1.1rem;
