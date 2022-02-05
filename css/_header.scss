@@ -1,11 +1,9 @@
 /*-------------HEADER------------*/
 .header__logo{
-    width: 10rem;
+    width: 7rem;
     height: auto;
-    margin-top: 0.3rem;
     img{
-        width: 80%;
-        padding: 1rem;
+        width: 100%;
     }
 }
 .header__navbar{
@@ -19,20 +17,6 @@
     li{
         padding: 0.1rem;
     }
-    a{
-        font-family: var(--bs-body-font-family);
-        text-transform: uppercase;
-        color: aliceblue;
-        font-size: $tam-fuente;
-        background-color: $color-botones;
-        padding: 0.2rem;
-        margin: 5px;
-        border: solid;
-        border-color: gray;
-        border-radius: 20px;
-        text-decoration: none;
-        text-align: center;
-    }    
 }
 
 .navbar-brand__modificado{
@@ -40,9 +24,9 @@
 }
 .nav-link__modificado{
     display: block;
+    font-family: var(--bs-body-font-family);
     text-transform: uppercase;
     color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
     font-size: $tam-fuente;
     background-color: $color-botones;
     padding: 0.2rem;
