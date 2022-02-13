@@ -45,12 +45,12 @@ footer{
     .direccion{
         font-size:0.8rem;
     }
-    .footer__credito{
-        font-size: 0.8rem;
-    }
 }
 @media (min-width:1200px){
     footer .footer__menu img{
         width: 4%;
+    }
+    .direccion{
+        font-size: 1.1rem;
     }
 }
