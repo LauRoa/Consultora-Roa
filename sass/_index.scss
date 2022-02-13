@@ -1,0 +1,85 @@
+
+/*----------CONTENIDO DEL INDICE ----------*/
+.section__organismos{
+    color: $color-texto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    img{
+        max-height: 7rem;
+        margin-top: 3rem;
+        padding: 0.2rem;
+        padding-bottom: 1rem;
+    }
+    h2{
+        width: 100%;
+        font-size:1.5rem !important;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    li{ 
+        padding:0.5rem;
+    }
+}
+.lugar__detrabajo{
+    display: none;
+}
+.img1,.img2,.img3,.img4,.img5{
+    width: 100%;
+}
+.img6,.img7,.img8{
+    width:85%;
+}
+.img__carousel{
+   padding:2.4rem;
+   width: 100%;
+   height: auto;
+}
+
+/*----- NO MUESTRA IMAGENES DE ASIDE -----*/
+@media (max-width:768px){
+    .img__organismos{
+        display: none;
+    }
+}
+
+/*----- NO MUESTRA CAROUSEL 1, 2 NI 3 */
+@media (min-width:768px){
+    #carousel1{
+        display: none;
+    }
+    #carousel2{
+        display: none;
+    }
+    #carousel3{
+        display: none;
+    }
+    .img__organismos{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+    }   
+    .lugar__detrabajo {
+        display: inline-block;
+        align-items:center;
+        justify-content: center;
+        justify-items: center;
+    }
+    #pba{
+        justify-content: center;
+        margin-top:5rem;
+        width: 110%;
+        }
+    #caba{
+        justify-content: center;
+        margin-top: 10rem;
+        max-width: 100%;
+    }
+    #argentina{
+        justify-content: center;
+        margin-top:3rem;
+        max-width: 70%;
+        }
+}

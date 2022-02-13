@@ -573,9 +573,13 @@ input:focus {
   margin: 5px;
   border: solid;
   border-color: gray;
-  border-radius: 20px;
+  border-radius: 8px;
   text-decoration: none;
   text-align: center;
+}
+
+.nav-link__modificado:hover {
+  background-color: aliceblue;
 }
 
 /*----------FOOTER----------*/
@@ -644,14 +648,14 @@ footer .footer__menu img {
   .direccion {
     font-size: 0.8rem;
   }
+  .footer__credito {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 1200px) {
   footer .footer__menu img {
     width: 4%;
-  }
-  .direccion {
-    font-size: 1.1rem;
   }
 }
 
@@ -717,6 +721,7 @@ h2, .h2 {
 }
 
 .h1__encabezados {
+  font-size: 1.1rem !important;
   padding: 1rem;
   text-align: center;
   background-color: #0868ac;
@@ -725,6 +730,13 @@ h2, .h2 {
 .h1__cuerpo {
   padding: 1rem;
   text-align: center;
+}
+
+/*----- Aumenta tamaño de letra en desktop -----*/
+@media (min-width: 1200px) {
+  .h1__encabezados {
+    font-size: 2rem !important;
+  }
 }
 
 /* MIXIN CON PARAMETROS */

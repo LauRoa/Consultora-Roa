@@ -1,11 +1,11 @@
 @import "css/variables";
 @import "css/estilosgenerales";
 @import "css/index";
-@import "css/sobrenosotros";
-@import "css/cotizaciones";
-@import "css/clientes";
-@import "css/contacto";
-@import "css/plataforma";
+@import "./nosotros/nosotros";
+@import "./cotizaciones/cotizaciones";
+@import "./clientes/clientes";
+@import "./contacto/contacto";
+@import "./plataforma/plataforma";
 @import "css/header";
 @import "css/footer";
 @import "css/maps";
